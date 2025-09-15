@@ -1,7 +1,11 @@
 由于supplementary file元数据是这种结构
+```
 “# Program:featureCounts v2.0.1; Command:"featureCounts" "-T" "1" "-p" "-t" "exon" "-g" "gene_id" "-a" "/Share2/home/20WLJ/RNAseq/genome/human_genome/Homo_sapiens.GRCh38.95.gtf" "-o" "/Share2/home/20WLJ/WHF-DATA/ZNF296/puro-2.id.txt" "/Share2/home/20WLJ/WHF-DATA/ZNF296/pLVX-Puro-2.bam"
  Geneid /Share2/home/20WLJ/WHF-DATA/ZNF296/pLVX-Puro-2.bam 
  ENSG00000223972 0”，
+```
+ 
+ 
  我得用header=1才能生成 
   ```
            ctrl1 
