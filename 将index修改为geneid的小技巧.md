@@ -60,6 +60,7 @@ df = pd.read_csv("C:/Users/Windows/Desktop/GSE70362.txt",
                  index_col=0)  # 直接把 ID_REF 设为索引
 df.index.name = 'Geneid'
 ```
+这样就不需要后续的 `reset_index()`、`rename()`、`set_index()`，结构更清晰。
 
 首先，用`df.index`来确定`ID_REF`是否为index名  
 不是的话
