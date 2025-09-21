@@ -51,7 +51,17 @@ ID_REF
 [5 rows x 48 columns]
 ```
 
-要将`ID_REF`改成  `Geneid`，就是df中修改index名的操作，  首先，用`df.index`来确定`ID_REF`是否为index名  
+要将`ID_REF`改成  `Geneid`，就是df中修改index名的操作，
+```python
+df = pd.read_csv("C:/Users/Windows/Desktop/GSE70362.txt",
+                 sep="\t",
+                 comment="!",
+                 header=0,
+                 index_col=0)  # 直接把 ID_REF 设为索引
+df.index.name = 'Geneid'
+```
+
+首先，用`df.index`来确定`ID_REF`是否为index名  
 不是的话
 ```python
 # 如果 'ID_REF' 是列而不是索引
